@@ -94,17 +94,17 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Download fat-aarch64-x86_64-apple-darwin
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: fat-aarch64-x86_64-apple-darwin
           path: apple/build/
       - name: Download aarch64-apple-ios
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: aarch64-apple-ios
           path: apple/build/
       - name: Download aarch64-apple-ios-sim
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: aarch64-apple-ios-sim
           path: apple/build/
